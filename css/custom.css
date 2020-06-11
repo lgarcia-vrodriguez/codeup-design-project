@@ -1,0 +1,15 @@
+* {
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+#logo {
+    width: 105px;
+    height: 105px;
+}
+
+
