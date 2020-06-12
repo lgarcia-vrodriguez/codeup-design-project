@@ -8,7 +8,12 @@ section, div {
 h5 {
     font-size: 1.5em;
 }
-
+h5, h4, h1 {
+    font-family: 'Anton', sans-serif;
+}
+p {
+    font-family: 'Abel', sans-serif;
+}
 #logo {
     width: 105px;
     height: 105px;
@@ -29,6 +34,7 @@ h5 {
     border: white solid 7px;
     padding-top: 35px;
     margin: auto;
-
 }
+
+
 
