@@ -1,8 +1,10 @@
-body {
-    background-color: #F0F0F0;
+:root {
+    background-color: #E6E6E6;
     box-sizing: border-box;
 }
-
+section, div {
+    background-color: #E6E6E6;
+}
 h5 {
     font-size: 1.5em;
 }
@@ -11,5 +13,22 @@ h5 {
     width: 105px;
     height: 105px;
 }
+#design {
+    background-color: #E6563B;
+}
+#develop {
+    background-color: #DEA03D;
+}
+#support {
+    background-color: #7CB06C;
+}
+#host {
+    background-color: #00ABA9;
+}
+#design, #develop, #support, #host {
+    border: white solid 7px;
+    padding-top: 35px;
+    margin: auto;
 
+}
 
