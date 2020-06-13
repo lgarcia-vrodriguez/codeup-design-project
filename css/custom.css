@@ -42,9 +42,16 @@ img {
     margin: auto;
 }
 
-@media screen and (max-width:561px) {
+@media screen and (max-width:575px) {
     img {
-        margin-top: -28px;
+        margin-top: -28px
+    }
+    p {
+        text-align: center;
+    }
+    #design, #develop, #support, #host {
+        max-width: 105px;
+        width: 100%;
     }
 }
 
