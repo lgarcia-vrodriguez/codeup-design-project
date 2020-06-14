@@ -15,6 +15,9 @@ p {
     background-color: #E6E6E6;
     font-family: 'Abel', sans-serif;
 }
+.badge {
+    font-family: 'Anton', sans-serif;
+}
 
 #largerImages {
     margin-top: 35px;
@@ -25,16 +28,16 @@ p {
     width: 105px;
     height: 105px;
 }
-#design {
+#design, #smallDesign {
     background-color: #E6563B;
 }
-#develop {
+#develop, #smallDevelop {
     background-color: #DEA03D;
 }
-#support {
+#support, #smallSupport {
     background-color: #7CB06C;
 }
-#host {
+#host, #smallHost {
     background-color: #00ABA9;
 }
 #design, #develop, #support, #host {
@@ -55,4 +58,6 @@ p {
         width: 100%;
     }
 }
+@media screen and (min-width:576px) and (max-width:767px) {
 
+}
