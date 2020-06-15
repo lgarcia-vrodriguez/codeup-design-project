@@ -72,6 +72,9 @@ p {
     #designContainer, #developContainer, #supportContainer, #hostContainer {
         max-width: 150px;
     }
+    #visualDesignText {
+        padding-top: 15px;
+    }
 }
 @media screen and (min-width:576px) and (max-width:767px) {
     #circleContainer {
@@ -84,6 +87,12 @@ p {
     #design, #develop, #support, #host {
         width: 105px;
     }
+    #featuredProject {
+        font-size: 10px;
+    }
+    #selectedWorkContainer {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -91,3 +100,4 @@ p {
         text-align: center;
     }
 }
+
