@@ -14,72 +14,76 @@
 <div class="jumbotron jumbotron-fluid d-block mb-0 d-sm-none d-md-block vw-100" style="background-color: #E6E6E6">
     <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white" style="height:50px">
         <img class="ml-3 bg-transparent" id="logo" src="./img/logo.png" alt="logo">
-        <h4 class="ml-2 mr-md-auto mb-0 font-weight-normal bg-transparent">codeup design</h4>
+        <p id="brandName" class="ml-2 mr-md-auto mb-0 font-weight-normal bg-transparent">codeup design</p>
         <nav class="my-2 my-md-0 mr-md-3 bg-transparent">
-            <a class="p-2 text-dark" href="#">services</a>
-            <a class="p-2 text-dark" href="#">work</a>
-            <a class="p-2 text-dark" href="#">blog</a>
-            <a class="p-2 text-dark" href="#">contact</a>
+            <a id="navItems" class="p-2 text-dark text-uppercase" href="#">services</a>
+            <a id="navItems" class="p-2 text-dark text-uppercase" href="#">work</a>
+            <a id="navItems" class="p-2 text-dark text-uppercase" href="#">blog</a>
+            <a id="navItems" class="p-2 text-dark text-uppercase" href="#">contact</a>
         </nav>
     </div>
 </div>
 
 <!--Small Screen Navigation Bar-->
-<div class="jumbotron jumbotron-fluid d-none d-sm-block d-md-none mb-0 vw-100" style="background-color: #E6E6E6">
+<div class="jumbotron jumbotron-fluid d-none d-sm-block d-md-none mb-0 vw-100" style="background-color: #E6E6E6;padding-bottom: 7rem">
     <nav class="navbar bg-white" style="height:50px">
-            <ul class="navbar-nav float-left d-inline d-flex flex-row mb-100px" style="margin-bottom: auto">
-                <li class="nav-item">
-                    <a class="nav-link p-2 text-dark" href="#">services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 text-dark" href="#">work</a>
-                </li>
-            </ul>
-            <div class="bg-transparent d-flex flex-column justify-content-center align-items-center mb-50px" style="max-width: 110px;margin-bottom: auto">
-                <img class="ml-3 bg-transparent" id="logo" src="./img/logo.png" alt="logo">
-                <h4 class="ml-2 mr-md-auto mb-0 font-weight-normal bg-transparent">codeup design</h4>
+            <div class="d-flex justify-content-center align-items-center mx-auto bg-transparent">
+                <ul class="navbar-nav float-left d-inline d-flex flex-row justify-content-between mb-100px" style="margin-bottom: auto">
+                    <li class="nav-item">
+                        <p class="bg-transparent"><a class="nav-link p-2 text-dark text-uppercase" href="#">services</a></p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="bg-transparent"><a class="nav-link p-2 text-dark text-uppercase" href="#">work</a></p>
+                    </li>
+                </ul>
+
+                <div id="smallNav" class="bg-transparent d-flex d-inline flex-column justify-content-center align-items-center" style="margin-top: -36px">
+                    <img class="ml-3 bg-transparent" id="logo" src="./img/logo.png" alt="logo">
+                    <p class="ml-2 mr-md-auto mb-0 font-weight-light bg-transparent">codeup design</p>
+                </div>
+
+                <ul class="navbar-nav float-right d-inline d-flex flex-row mb-100px" style="margin-bottom: auto">
+                    <li class="nav-item">
+                        <p class="bg-transparent"><a class="nav-link p-2 text-dark text-uppercase" href="#">blog</a></p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="bg-transparent"><a class="nav-link p-2 text-dark text-uppercase" href="#">contact</a></p>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar-nav float-right d-inline d-flex flex-row mb-100px" style="margin-bottom: auto">
-                <li class="nav-item">
-                    <a class="nav-link p-2 text-dark" href="#">blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 text-dark" href="#">contact</a>
-                </li>
-            </ul>
     </nav>
 </div>
 
 
 <!--First section-->
-<div class="container-fluid m-sm-0 p-sm-0 pt-5" style="background-color: #E6E6E6">
+<div class="container-fluid m-sm-0 p-sm-0 pt-5 pb-4" style="background-color: #E6E6E6">
     <h1 class="text-center text-uppercase">visual design & web development</h1>
-    <h4 class="text-center text-uppercase mb-0">from park city, utah</h4>
+    <h4 class="text-center text-uppercase mb-0 pt-4">from park city, utah</h4>
 </div>
 
-
-<div class="container-fluid d-flex">
-    <div class="row justify-content-center border-bottom border-secondary pd-5 m-auto">
-        <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
-            <div id="design" class="col rounded-circle text-light m-2" style="height:105px; width:105px">
+<!--Center Circles-->
+<div class="container-fluid d-flex justify-content-center">
+    <div id="circleContainer" class="row border-bottom border-secondary">
+        <div id="designContainer" class="col-6 col-sm-3 p-0 b-0 align-items-center justify-content-center">
+            <div id="design" class="col rounded-circle text-light m-1" style="height:105px; width:105px">
                 <h5 class="col bg-transparent d-flex justify-content-center align-items-center  text-uppercase">
                     Design</h5>
             </div>
         </div>
-        <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
-            <div id="develop" class="col rounded-circle text-light m-2" style="height:105px; width:105px">
+        <div id="developContainer" class="col-6 col-sm-3 p-0 b-0 align-items-center justify-content-center">
+            <div id="develop" class="col rounded-circle text-light m-1" style="height:105px; width:105px">
                 <h5 class="col bg-transparent d-flex justify-content-center align-items-center  text-uppercase">
                     Develop</h5>
             </div>
         </div>
-        <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
-            <div id="support" class="col rounded-circle text-light m-2" style="height:105px; width:105px">
+        <div id="supportContainer" class="col-6 col-sm-3 p-0 b-0 align-items-center justify-content-center">
+            <div id="support" class="col rounded-circle text-light m-1" style="height:105px; width:105px">
                 <h5 class="col bg-transparent d-flex justify-content-center align-items-center  text-uppercase">
                     Support</h5>
             </div>
         </div>
-        <div class="col-6 col-sm-3 d-flex align-items-center justify-content-center">
-            <div id="host" class="col rounded-circle text-light m-2" style="height:105px; width:105px">
+        <div id="hostContainer" class="col-6 col-sm-3 p-0 b-0 align-items-center justify-content-center">
+            <div id="host" class="col rounded-circle text-light m-1" style="height:105px; width:105px">
                 <h5 class="col bg-transparent d-flex justify-content-center align-items-center text-uppercase">Host</h5>
             </div>
         </div>
@@ -87,17 +91,16 @@
 </div>
 
 
-<main class="container-fluid d-flex justify-content-center m-0" style="background-color: #E6E6E6">
-    <section class="row block justify-content-around d-flex position-absolute align-items-center" style="max-width: 960px">
-        <div class="col-8 position-relative">
-            <p class="m-0 py-2">
-                Selected Work
-            </p>
+<main class="container-fluid d-flex m-0" style="background-color: #E6E6E6">
+    <section class="row d-flex justify-content-center align-items-center">
+
+        <div class="col-8 " style="max-width: 50%">
+            <p id="selectedWork" class="m-0 pl-3 text-uppercase" style="padding-top: 50px">Selected Work</p>
             <div class="row d-flex">
                 <div class="col-12 col-sm-6">
                     <div class="col justify-content-center align-items-center">
                         <img id="largerImages" src="./img/images/apple-ipad.jpg" alt="appleipad">
-                        <p class="text-uppercase float-left">featured project</p>
+                        <p id="featuredProject" class="text-uppercase float-left">featured project</p>
                         <div class="float-right d-flex flex-row">
                             <h6 class="mb-0 pl-2"><span id="smallDesign" class="badge rounded-circle">D</span></h6>
                             <h6 class="mb-0 pl-2"><span id="smallDevelop" class="badge rounded-circle">D</span></h6>
@@ -110,7 +113,7 @@
                 <div class="col-12 col-sm-6 d-none d-sm-block">
                      <div class="col justify-content-center align-items-center">
                         <img id="largerImages" src="./img/images/macbook.jpg" alt="macbook">
-                         <p class="text-uppercase float-left">featured project</p>
+                         <p id="featuredProject" class="text-uppercase float-left">featured project</p>
                          <div class="float-right d-flex flex-row">
                              <h6 class="mb-0 pl-2"><span id="smallDesign" class="badge rounded-circle">D</span></h6>
                              <h6 class="mb-0 pl-2"><span id="smallDevelop" class="badge rounded-circle">D</span></h6>
@@ -123,7 +126,7 @@
                 <div class="col-12 col-sm-6 d-none d-sm-block">
                     <div class="col justify-content-center align-items-center">
                         <img id="largerImages" src="./img/images/man.jpg" alt="head">
-                        <p class="text-uppercase float-left">featured project</p>
+                        <p id="featuredProject" class="text-uppercase float-left">featured project</p>
                         <div class="float-right d-flex flex-row">
                             <h6 class="mb-0 pl-2"><span id="smallDesign" class="badge rounded-circle">D</span></h6>
                             <h6 class="mb-0 pl-2"><span id="smallDevelop" class="badge rounded-circle">D</span></h6>
@@ -136,7 +139,7 @@
                 <div class="col-12 col-sm-6 d-none d-sm-block">
                     <div class="col justify-content-center align-items-center">
                         <img id="largerImages" src="./img/images/security.jpg" alt="security">
-                        <p class="text-uppercase float-left">featured project</p>
+                        <p id="featuredProject" class="text-uppercase float-left">featured project</p>
                         <div class="float-right d-flex flex-row">
                             <h6 class="mb-0 pl-2"><span id="smallDesign" class="badge rounded-circle">D</span></h6>
                             <h6 class="mb-0 pl-2"><span id="smallDevelop" class="badge rounded-circle">D</span></h6>
@@ -149,36 +152,36 @@
             </div>
         </div>
 
-        <div class="col-4 position-relative d-none d-md-block">
-            <p class="m-0 py-2">The Last</p>
+        <div class="col-4 d-none d-md-block" style="max-width: 24%">
+            <p class="m-0 py-2 text-uppercase">The Last</p>
 
             <div class="row d-flex flex-column justify-content-around">
-                <div class="media">
+                <div class="media m-2">
                     <img src="./img/images/mobile-phone.jpg" class="align-self-center mr-3" alt="mobile phone" style="width:64px;height:64px">
                     <div class="media-body">
                         <h5 class="mt-0 text-uppercase">The heading bar and absolute positioning</h5>
                     </div>
                 </div>
 
-                <div class="media">
+                <div class="media m-2">
                     <img src="./img/images/head.jpg" class="align-self-center mr-3" alt="head" style="width:64px;height:64px">
                     <div class="media-body">
                         <h5 class="mt-0 text-uppercase">Nibbler awesome website testing</h5>
                     </div>
                 </div>
 
-                <div class="media">
+                <div class="media m-2">
                     <img src="./img/images/ipad.jpg" class="align-self-center mr-3" alt="ipad" style="width:64px;height:64px">
                     <div class="media-body">
                         <h5 class="mt-0 text-uppercase">How to get google to like you</h5>
                     </div>
                 </div>
 
-                <div>
-                    <div class="media">
+                <div class="pl-1 pt-4">
+                    <div class="media m-0">
                         <img src="./img/images/twitter.svg" class="align-self-start mr-3" alt="twitter icon" style="width:30px;height:30px">
                         <div class="media-body">
-                            <h5 class="mt-0">Top-aligned media</h5>
+                            <p class="mt-0 font-weight-bold">LAST TWEET</p>
                         </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at inventore ipsam quibusdam quidem rem. Aliquam at cum, debitis deleniti, distinctio dolores eveniet mollitia non quos recusandae unde vero?</p>

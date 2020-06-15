@@ -18,7 +18,12 @@ p {
 .badge {
     font-family: 'Anton', sans-serif;
 }
-
+#brandName, #navItems {
+    font-family: 'Abel', sans-serif;
+}
+#brandName {
+    font-size: 32px;
+}
 #largerImages {
     margin-top: 35px;
     width: inherit;
@@ -45,6 +50,9 @@ p {
     padding-top: 35px;
     margin: auto;
 }
+#smallNav p {
+    font-size: 32px;
+}
 
 @media screen and (max-width:575px) {
     img {
@@ -53,11 +61,33 @@ p {
     p {
         text-align: center;
     }
+    #circleContainer {
+        max-width: 250px;
+        width: 100%;
+    }
     #design, #develop, #support, #host {
         max-width: 105px;
         width: 100%;
     }
+    #designContainer, #developContainer, #supportContainer, #hostContainer {
+        max-width: 150px;
+    }
 }
 @media screen and (min-width:576px) and (max-width:767px) {
+    #circleContainer {
+        max-width: 350px;
+        width: 100%;
+    }
+    #centerCircles {
+        line-height: 20px;
+    }
+    #design, #develop, #support, #host {
+        width: 105px;
+    }
+}
 
+@media screen and (max-width:767px) {
+    #selectedWork {
+        text-align: center;
+    }
 }
